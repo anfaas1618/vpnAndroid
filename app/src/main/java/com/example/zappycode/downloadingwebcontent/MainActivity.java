@@ -51,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("tag",""+result);
                 if (result==1)
                 {
-                   resultText.setText("may not be a vpn");
+                   resultText.setText(" IT IS NOT A VPN");
                 }
                 else
-                    resultText.setText("it may be a vpn");
+                    resultText.setText("IT IS A VPN");
                result=0;
             }
         });

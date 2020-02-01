@@ -4,17 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+
+android:background="@drawable/bkimges"
+
+
     tools:context="com.example.zappycode.downloadingwebcontent.MainActivity">
 
     <TextView
         android:id="@+id/textREsult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="420dp"
+        android:layout_marginBottom="308dp"
         android:text="vpn detector"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
@@ -22,21 +28,26 @@
         android:id="@+id/edit_ip"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
+        android:textSize="20dp"
         android:hint="enter your ip "
         app:layout_constraintBottom_toTopOf="@+id/textREsult"
+        android:textColorHint="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.607"
         tools:layout_editor_absoluteX="0dp" />
 
+
     <Button
+        android:id="@+id/goo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="goo"
-        android:id="@+id/goo"
+        android:textColor="@color/colorAccent"
         app:layout_constraintBottom_toTopOf="@+id/textREsult"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_ip" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_ip"
+        app:layout_constraintVertical_bias="0.418" />
 
 </android.support.constraint.ConstraintLayout>
